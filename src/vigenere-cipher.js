@@ -35,7 +35,6 @@ class VigenereCipheringMachine {
     return this.isDirect ? result : result.split("").reverse().join("");
   }
   decrypt(encryptedMessage, key) {
-    let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let result = "";
 
     if (encryptedMessage === undefined || key === undefined) {
