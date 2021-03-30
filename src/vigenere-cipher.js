@@ -25,7 +25,7 @@ class VigenereCipheringMachine {
       let k = key.toUpperCase().charCodeAt(j);
 
       if (m >= 65 && m <= 90) {
-        result += String.fromCharCode(((m + k - 130) % 26) + 65);
+        result += String.fromCharCode(((m + k - 26) % 26) + 65);
         j++;
       } else {
         result += message[i].toUpperCase();
