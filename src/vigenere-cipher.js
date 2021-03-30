@@ -10,8 +10,6 @@ class VigenereCipheringMachine {
   }
 
   encrypt(message, key) {
-    let msg = message.toUpperCase();
-    let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let result = "";
 
     if (message === undefined || key === undefined) {
